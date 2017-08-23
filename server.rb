@@ -18,3 +18,7 @@ get '/favourites' do
   @fav_links={ "tmz" => 'http://www.tmz.com/',"reddit"=>'https://www.reddit.com/'}
   erb :favourites
 end
+
+get '/' do
+  redirect to('/home')
+end
