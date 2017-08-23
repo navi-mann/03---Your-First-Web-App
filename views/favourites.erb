@@ -1,0 +1,6 @@
+<h1> My favourite links! </h1>
+<ul>
+  <% @fav_links.each do |key,value| %>
+    <a href=<%=value %> target='_blank'><%=key%> </a><br>
+  <% end %>
+</ul>
